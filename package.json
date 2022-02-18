@@ -1,0 +1,12 @@
+{
+  "name": "mp-page-container-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "prettier --loglevel warn --write \"src/**/*.{wxml,wxss,scss,wxs,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}

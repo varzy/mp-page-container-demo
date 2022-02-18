@@ -1,0 +1,15 @@
+.fab {
+  position: fixed;
+  bottom: 100rpx;
+  right: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 64rpx;
+  z-index: 500;
+}

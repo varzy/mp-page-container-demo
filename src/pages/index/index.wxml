@@ -1,0 +1,5 @@
+<view class="container">
+  <button type="primary" bindtap="onPublish">发帖</button>
+</view>
+
+<post-fab id="post_fab" />

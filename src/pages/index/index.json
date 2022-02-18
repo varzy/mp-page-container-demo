@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "post-fab": "/components/post-fab/index"
+  }
+}
