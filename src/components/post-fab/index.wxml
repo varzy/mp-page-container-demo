@@ -12,21 +12,12 @@
   bindafterleave="onPageContainerAfterLeave"
   custom-style="z-index: 10000"
 >
-  <view class="post_fab_wrapper_draft_publisher">
-    <view class="nav" wx:if="{{ showCustomNav }}">
-      <view
-        class="fake_height"
-        style="height: {{ publisherNavInfo.contentHeight + publisherNavInfo.statusHeight + 10 }}px;"
-      ></view>
-      <view
-        class="nav-content"
-        style="height: {{ publisherNavInfo.contentHeight }}px; top: {{ publisherNavInfo.statusHeight }}px"
-      >
-        <text bindtap="onClickNavBack">取消</text>
-        <!-- <van-icon name="arrow-left" size="20" class="nav-content-back" bindtap="onClickNavBack" /> -->
-      </view>
-    </view>
+  <view class="post_fab_wrapper">
+    <textarea class="content" value="{{ form.content }}" bindinput="onContentInput"></textarea>
 
-    <view class="content"> Page Container Content </view>
+    <view class="tips"> </view>
+
+    <button class="btn btn-submit" type="primary" bindtap="onPublish">提交</button>
+    <button class="btn btn-cancel" bindtap="onClose">取消</button>
   </view>
 </page-container>

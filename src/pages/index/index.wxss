@@ -1,0 +1,11 @@
+.tips {
+  margin-top: 32rpx;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.tips-item {
+  margin-top: 12rpx;
+}

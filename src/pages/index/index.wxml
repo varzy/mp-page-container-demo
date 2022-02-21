@@ -1,5 +1,23 @@
 <view class="container">
   <button type="primary" bindtap="onPublish">发帖</button>
+
+  <view class="tips">
+    <view class="tips-item"
+      >* 一个 page-container 组件的 Demo，演示使用 page-container 拦截返回操作</view
+    >
+    <view class="tips-item">* 点击右下角悬浮按钮或上方发帖按钮都可以调起 page-container</view>
+    <view class="tips-item"
+      >* page-container 内，点击取消或其他任何形式的返回(包括左滑手势)都将会拦截</view
+    >
+    <view class="tips-item"
+      >* 唯一不完美之处在于使用左滑手势返回时，页面将有一个短暂的下拉再弹起的小动画</view
+    >
+  </view>
 </view>
 
-<post-fab id="post_fab" />
+<post-fab
+  id="post_fab"
+  bind:ready-publish="handlePostFabReadied"
+  bind:published="handlePostFabPublished"
+  bind:close-publisher="handlePostFabClosed"
+/>
