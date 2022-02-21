@@ -36,12 +36,10 @@ Component({
         this.resetForm();
       }
     },
-    realClosePageContainer() {
-      this.setData({ isPageContainerRealClose: true, isPageContainerVisible: false });
-    },
     resetForm() {
       this.setData({ 'form.content': '' });
     },
+    // 使用此方法可以真正关闭 page-container
     realClose() {
       this.setData({ isPageContainerRealClose: true, isPageContainerVisible: false });
     },
@@ -54,8 +52,7 @@ Component({
       wx.showToast({ title: '提交成功' });
 
       this.triggerEvent('published');
-
-      this.realClosePageContainer();
+      this.realClose();
     },
     onClose() {
       this.askSaveDraft();

@@ -15,8 +15,6 @@
   <view class="post_fab_wrapper">
     <textarea class="content" value="{{ form.content }}" bindinput="onContentInput"></textarea>
 
-    <view class="tips"> </view>
-
     <button class="btn btn-submit" type="primary" bindtap="onPublish">提交</button>
     <button class="btn btn-cancel" bindtap="onClose">取消</button>
   </view>
